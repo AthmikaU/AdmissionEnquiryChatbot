@@ -1,0 +1,2 @@
+pip install joblib scikit-learn
+# python.exe -m pip install --upgrade pip

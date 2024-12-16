@@ -1,0 +1,316 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* FIRST NAVBAR */
+.thin-nav {
+    background-color: #13294B; /* Navy blue background */
+    padding: 10px;
+    text-align: center;
+}
+
+.thin-nav a {
+    color: gray; /* White text */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.thin-nav a:hover {
+    color: #f1f0ec; /* Gold color on hover */
+    transform: translateY(-3px); /* Text moves up slightly */
+}
+
+
+/* SECOND NAVBAR  */
+.secondary-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff; /* Midnight Blue background */
+    color: white;
+}
+
+.nav-left {
+    flex: 1;
+}
+
+.nav-left .nav-logo {
+    height: 50px; /* Adjust logo size */
+}
+
+.nav-right {
+    flex: 2;
+    text-align: right;
+}
+
+.nav-right a {
+    color:  #0f223d;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+    align-items: center; /* Align text and arrow */
+    gap: 5px; /* Space between text and arrow */
+}
+
+.nav-right a:hover {
+    color: #081221;
+    font-size: 18px;
+}
+
+.nav-right a img.arrow-icon {
+    width: 15px; /* Arrow icon size */
+    height: 10px;
+    transform: translateY(1px);
+    transition: transform 0.3s ease;
+}
+
+.nav-right a:hover img.arrow-icon {
+    transform: rotate(180deg); /* Rotate arrow on hover */
+}
+
+.nav-left .nav-logo {
+    height: 30px; 
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, height 0.3s ease, width 0.3s ease; /* Smooth transition */
+}
+
+
+/* CAROUSEL  */
+ /* Set a fixed height for the carousel */
+ .carousel-inner {
+    height: 500px; /* Fixed height for all slides */
+}
+
+.carousel-inner .carousel-item {
+    height: 100%;
+}
+
+.carousel-inner img {
+    object-fit: cover; /* Ensures the image covers the entire slide area */
+    width: 100%;
+    height: 100%;
+}
+
+
+/* CAROUSEL BUTTON  */
+/* Optional: Control carousel indicators to align properly */
+.carousel-indicators button {
+    background-color: black; /* Change button color if needed */
+}
+
+.carousel-text {
+    position: absolute;
+    top: 40%; /* Center the text vertically */
+    right: 30%; /* Align the text to the left with some padding */
+    transform: translateY(-110%); /* Offset to truly center vertically */
+    text-align: left;
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+ /* Button styles */
+ .carousel-buttons {
+    position: absolute;
+    margin-left: 13%;
+    bottom: 20px; /* Adjust the position of the buttons */
+    left: 20px; /* Positioning from the left */
+    /* display: flex; */
+    gap: 10px; /* Space between the buttons */
+}
+
+.carousel-buttons .btn {
+    border-radius: 30px; /* Rounded edges */
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button text size */
+    font-weight: bold; /* Bold text */
+    color: #13294B;
+    border: none;
+    text-transform: uppercase;
+}
+
+/* Transparent button (Explore Programs) */
+.btn-transparent {
+    background-color: transparent;
+    border: 2px solid white;  /* White border for Explore Programs button */
+    color: rgb(232, 227, 227);  /* White text color */
+}
+
+.btn-transparent:hover {
+    background-color: transparent;
+    border: 2px solid white;  /* White border for Explore Programs button */
+    color: rgb(232, 227, 227);  /* White text color */
+    transform: scale(1.05); /* Slightly increase button size on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.carousel-buttons .btn-primary:hover {
+    background-color: #f4a261; /* Desired hover background color */
+    color: #13294B; /* Keep the original text color */
+    border-color: #e76f51; /* Optional: Change border color */
+    transform: scale(1.05); /* Slightly increase button size on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.carousel-item .custom-buttons .custom-view-more {
+    background-color: rgb(252, 200, 31);
+    border-radius: 30px; /* Rounded edges */
+    padding: 10px 15px; /* Button padding */
+    font-size: 18px; /* Button text size */
+    font-weight: bold; /* Bold text */
+    color: #13294B;
+    border: none;
+}
+
+
+/* ACCREDATION STYLES */
+.accreditations-container {
+    position: absolute; /* Fixes the position relative to the nearest positioned parent */
+    top: 100%; /* Moves it below the carousel */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Adjusts the alignment to truly center it */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 160px auto;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Adjust as per design */
+    z-index: 10; /* Ensures it stays above other content */
+    gap: 40px;
+}
+
+.accreditation {
+    text-align: center;
+}
+
+.accreditation img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin: 10px;
+}
+
+.accreditation p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.accreditations-container {
+    margin-bottom: 10rem; /* Adds space below the accreditation symbols */
+}
+
+/* ABOUT SAHYADRI */
+section.container {
+    margin-top: 15rem; /* Ensures proper spacing from the previous section */
+    padding: 2rem; /* Adjust padding to make the container content more compact */
+    max-height: 570px;
+    border-radius: 10px;
+}
+
+.text-justify {
+    text-align: justify;
+    margin-left: 20px;
+    max-width: 650px;
+    font-size: 18px;
+}
+
+.text-lg, .text-3xl {
+    text-align: justify;
+    margin-left: 20px;
+    max-width: 650px;
+}
+
+.about-campus-btn {
+    border-radius: 30px; /* Rounded edges */
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button text size */
+    font-weight: bold; /* Bold text */
+    color: #13294B; /* Text color */
+    background-color: #ffffff; /* Button background color */
+    border: 2px solid #13294B; /* Optional: Add border for contrast */
+    text-transform: uppercase; /* Uppercase text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    margin-left: 20px;
+}
+
+.about-campus-btn:hover {
+    background-color: #e2dada; /* Slight background change on hover */
+    color: #000000; /* Text color on hover */
+}
+
+.image-container {
+    flex: 1; /* Ensures the image container takes up equal space */
+    display: flex; /* Centers the image inside the container */
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 30%; /* Prevents the image from overflowing the container */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 15px; /* Adds rounded corners */
+    margin-bottom: 90%;
+    margin-top: -30%;
+    margin-left: 65%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better design */
+}
+
+
+/* LEARN MORE BUTTON  */
+.image-container1 {
+    flex: 1; /* Ensures the image container takes up equal space */
+    display: flex; /* Centers the image inside the container */
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container1 img {
+    max-width: 30%; /* Prevents the image from overflowing the container */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 15px; /* Adds rounded corners */
+    margin-bottom: 90%;
+    margin-top: -30%;
+    margin-left: 65%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better design */
+}
+
+/* chatbot button */
+.chatbot-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 95px;
+    height: 65px;
+    background-color: #130360;
+    border-radius: 50%;
+    border: 1px solid white;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 15;
+    box-shadow: 0 0 10px rgb(158, 195, 237),
+                0 0 15px rgba(253, 253, 255, 0.8),
+                0 0 10px rgba(80, 111, 204, 0.6);
+}
+.chatbot-btn a{
+    color: #ffffff;
+    text-decoration: none;
+    z-index: 15;
+    font-size: 30px;
+}

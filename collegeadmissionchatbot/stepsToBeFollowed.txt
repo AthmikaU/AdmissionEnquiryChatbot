@@ -1,0 +1,25 @@
+# If you are running this for the first time then follow these steps:
+
+    1. "pip install virtualenv"
+
+    2. "python -m venv venv"
+
+    3. type ".\venv\Scripts\activate" in terminal
+        // if error => open command prompt and type: "Get-ExecutionPolicy" (if Restricted then type ->
+        // "Set-ExecutionPolicy RemoteSigned -Scope CurrentUser" ) 
+        // (now, try again activating venv in terminal)
+
+    4. "pip install flask flask-cors scikit-learn joblib"
+
+    5. "python scripts/train_nlp.py" : (To train model after changing dataset)
+
+    6. "cd collegeadmissionchatbot"
+
+    7. To run backend code: "python -m chatbot.api"
+    : Running on http://127.0.0.1:5000 OR Running on http://192.168.1.38:5000
+
+    8. Run Frontend/index.html on LiveServer (College WebPage - Main)
+
+# Orelse just follow steps 6, 7, 8.
+
+# To Analyze Chat History stored in 'chatbot_logs.jsonl' => "python scripts/analyze_logs.py"

@@ -1,0 +1,661 @@
+{
+    "dataset": [
+      {
+        "Question ID": 1,
+        "User Questions": [
+          "What are the admission requirements?",
+          "Can you tell me the admission criteria?",
+          "What do I need to get admitted?",
+          "Admission reqirements?",
+          "Plz list admission requirements."
+        ],
+        "Bot Response": "The admission requirements vary by program, but generally include a completed application, transcripts, and standardized test scores. For B.E., a 10+2 qualification with a minimum of 45% aggregate is required along with CET or COMEDK scores. For postgraduate programs, relevant undergraduate degrees and qualifying exam scores are needed.",
+        "Category": "Application Process"
+      },
+      {
+        "Question ID": 2,
+        "User Questions": [
+          "What is the application deadline?",
+          "When is the last date to apply?",
+          "Application deadline for admission?",
+          "By when should I submit my application?",
+          "Application dedline?"
+        ],
+        "Bot Response": "The application deadlines vary depending on the admission mode (CET, COMEDK, or Management quota). Please visit our admissions page or contact the admissions office for precise dates.",
+        "Category": "Deadlines"
+      },
+      {
+        "Question ID": 3,
+        "User Questions": [
+          "Do you offer scholarships?",
+          "Are there any scholarships available?",
+          "Scholarship options?",
+          "Does the college give scholarships?",
+          "Schlarships offered?"
+        ],
+        "Bot Response": "Yes, Sahyadri College offers scholarships based on academic merit, financial need, and other criteria. For more information, visit our scholarships page or contact the financial aid office.",
+        "Category": "Scholarships"
+      },
+      {
+        "Question ID": 4,
+        "User Questions": [
+          "How can I apply for financial aid?",
+          "What is the process for financial aid?",
+          "How do I get financial assistance?",
+          "Apply for finacial aid?",
+          "Can I get help paying tuition?"
+        ],
+        "Bot Response": "You can apply for financial aid by completing the necessary forms available on our website. Scholarships and need-based assistance are offered. Contact the financial aid office for detailed guidance.",
+        "Category": "Financial Aid"
+      },
+      {
+        "Question ID": 5,
+        "User Questions": [
+          "What standardized tests do I need to take?",
+          "Which tests are required for admission?",
+          "Do I need the SAT or ACT?",
+          "Test requirements for application?",
+          "What tests should I take?"
+        ],
+        "Bot Response": "For undergraduate courses, you need to take CET or COMEDK exams. Postgraduate admissions may require KMAT, Karnataka PGCET, or equivalent tests depending on the program.",
+        "Category": "Tests"
+      },
+      {
+        "Question ID": 6,
+        "User Questions": [
+          "Is there an interview process?",
+          "Do I need to attend an interview?",
+          "Are interviews part of the application?",
+          "Is an interveiw required for admission?",
+          "Will I need to give an interview?"
+        ],
+        "Bot Response": "Some programs may require an interview as part of the admission process. Check the specific program requirements for more details.",
+        "Category": "Application Process"
+      },
+      {
+        "Question ID": 7,
+        "User Questions": [
+          "Can I visit the campus?",
+          "How do I schedule a campus tour?",
+          "Are campus visits allowed?",
+          "Can I come to see the college?",
+          "Visitng the campus?"
+        ],
+        "Bot Response": "Yes, campus visits are encouraged. You can schedule a tour on our website or by contacting the admissions office. Explore our state-of-the-art labs, library, and other facilities.",
+        "Category": "Campus Visits"
+      },
+      {
+        "Question ID": 8,
+        "User Questions": [
+          "What majors are offered?",
+          "Which courses do you have?",
+          "List of available programs?",
+          "What subjects can I study?",
+          "Available majors?"
+        ],
+        "Bot Response": "Sahyadri College offers undergraduate, postgraduate, and doctoral programs in fields such as Computer Science, Information Science, Artificial Intelligence, Robotics, Mechanical Engineering, Data Science, Cyber Security, and Management. Visit our website for a full list.",
+        "Category": "Academic Programs"
+      },
+      {
+        "Question ID": 9,
+        "User Questions": [
+          "How do I check the status of my application?",
+          "Can I track my application?",
+          "Application status check?",
+          "How to monitor application progress?",
+          "Checking the application portal?"
+        ],
+        "Bot Response": "You can check the status of your application by logging into your applicant portal on our website. If you need assistance, contact the admissions office.",
+        "Category": "Application Process"
+      },
+      {
+        "Question ID": 10,
+        "User Questions": [
+          "What are the options for part-time study?",
+          "Can I study part-time?",
+          "Do you have part-time programs?",
+          "Part-time study options?",
+          "Are there part-time classes available?"
+        ],
+        "Bot Response": "We offer flexible part-time study options across various programs. For more information, please contact the admissions office.",
+        "Category": "Enrollment Options"
+      },
+      {
+        "Question ID": 11,
+        "User Questions": [
+          "What is the tuition fee?",
+          "How much is the tuition?",
+          "Tuition cost for programs?",
+          "Fee structure?",
+          "What do I need to pay for tuition?"
+        ],
+        "Bot Response": "Tuition fees vary by program and mode of admissions.\nKCET: According to KEA fee structure.\nMANAGEMENT QUOTA: You can contact management. For more details please dial 08242277333\nCOMEDK: -----\n",
+        "Category": "Tuition"
+      },
+      {
+        "Question ID": 12,
+        "User Questions": [
+          "Do you have online classes?",
+          "Are there online programs available?",
+          "Can I study online?",
+          "Online course options?",
+          "Are classes offered virtually?"
+        ],
+        "Bot Response": "Currently, most programs are conducted on campus. However, some modules may have online options. Check with your program coordinator for details.",
+        "Category": "Enrollment Options"
+      },
+      {
+        "Question ID": 13,
+        "User Questions": [
+          "What clubs can I join?",
+          "List of student clubs?",
+          "Are there extracurricular clubs?",
+          "What activities are there outside academics?",
+          "Student organizations at Sahyadri?"
+        ],
+        "Bot Response": "Sahyadri College offers a variety of student clubs such as the Sahyadri Open Source Community (SOSC), Challengers Club, MegaMinds, Floatonomers, English Club, and Sahyadri Nihongo Club. These clubs foster skills in technology, leadership, arts, languages, and innovation.",
+        "Category": "Student Life",
+        "Follow-Up Questions": [
+          {
+            "User Questions": [
+              "Oh, what does SOSC do?",
+              "What is the purpose of SOSC?",
+              "Tell me more about the Open Source Club?",
+              "What are the activities in SOSC?",
+              "What does SOSC focus on?"
+            ],
+            "Bot Response": "The Sahyadri Open Source Community (SOSC) promotes open-source technologies. Students collaborate on projects, attend workshops, and participate in hackathons. No specific qualifications are needed—just an interest in coding and technology!"
+          },
+          {
+            "User Questions": [
+              "What about the Nihongo Club?",
+              "What is the Sahyadri Nihongo Club about?",
+              "Activities in Nihongo Club?",
+              "How do I join the Japanese club?"
+            ],
+            "Bot Response": "The Sahyadri Nihongo Club is for students interested in learning Japanese language and culture. Activities include language lessons, cultural workshops, and exchange programs. Everyone is welcome—no prior knowledge of Japanese is required!"
+          }
+        ]
+      },
+      {
+        "Question ID": 14,
+        "User Questions": [
+          "What are the hostel facilities like?",
+          "Do you have on-campus accommodation?",
+          "Hostel options?",
+          "Is there a hostel?",
+          "Accommodation facilities at the college?"
+        ],
+        "Bot Response": "Yes, we provide on-campus hostel facilities with separate accommodations for boys and girls. Amenities include Wi-Fi, a mess with healthy meals, and recreational areas. Contact the hostel office for fees and availability.",
+        "Category": "Accommodation"
+      },
+      {
+        "Question ID": 15,
+        "User Questions": [
+          "What are the lab facilities available?",
+          "Do you have labs for practical work?",
+          "Lab facilities at Sahyadri?",
+          "Can I use the labs after class?",
+          "Describe the college labs."
+        ],
+        "Bot Response": "Our state-of-the-art laboratories cater to diverse programs like engineering, robotics, and data science. They are equipped with modern tools and technologies, and students have extended access for project work.",
+        "Category": "Facilities"
+      },
+      {
+        "Question ID": 16,
+        "User Questions": [
+          "What are the library timings?",
+          "Library hours?",
+          "Can I access the library in the evening?",
+          "Library schedule?",
+          "When does the library open?"
+        ],
+        "Bot Response": "The library is open from 8:00 AM to 10:00 PM on weekdays and 9:00 AM to 6:00 PM on weekends. Extended hours are available during exams.",
+        "Category": "Facilities"
+      },
+      {
+        "Question ID": 17,
+        "User Questions": [
+          "Are there internship opportunities?",
+          "Do you help with internships?",
+          "Can I get an internship through the college?",
+          "Internship options for students?",
+          "Does the college provide internships?"
+        ],
+        "Bot Response": "Yes, Sahyadri has strong industry partnerships and a dedicated placement cell to assist students in securing internships in top companies across various domains.",
+        "Category": "Career Services"
+      },
+      {
+        "Question ID": 18,
+        "User Questions": [
+          "What companies visit for placements?",
+          "Placement companies?",
+          "Who recruits from Sahyadri?",
+          "Placement opportunities?",
+          "Recruiters visiting the college?",
+          "how are placements at sahyadri?"
+        ],
+        "Bot Response": "Top companies like Infosys, Wipro, TCS, IBM, and Capillary regularly recruit from Sahyadri. Visit the placement section on our website for a full list.",
+        "Category": "Career Services"
+      },
+      {
+        "Question ID": 19,
+        "User Questions": [
+          "What health services are available?",
+          "Does the college have a medical center?",
+          "Health facilities for students?",
+          "Are there doctors on campus?",
+          "Medical aid at the college?"
+        ],
+        "Bot Response": "Our on-campus health center provides medical consultations, first aid, and basic health services. Emergency care is also available.",
+        "Category": "Student Services"
+      },
+      {
+        "Question ID": 20,
+        "User Questions": [
+          "Can I get counseling support?",
+          "Do you offer mental health services?",
+          "Is there a counselor available?",
+          "Where can I talk about stress issues?",
+          "Mental health support at Sahyadri?"
+        ],
+        "Bot Response": "The college offers free counseling services for students. Professional counselors are available to help with academic, personal, and career-related concerns.",
+        "Category": "Student Services"
+      },
+      {
+        "Question ID": 21,
+        "User Questions": [
+          "Are there student exchange programs?",
+          "Can I study abroad through the college?",
+          "International exchange opportunities?",
+          "Student exchange programs?",
+          "Global study options at Sahyadri?"
+        ],
+        "Bot Response": "Sahyadri College collaborates with international universities to offer student exchange programs. Contact the international office for more details.",
+        "Category": "Global Opportunities"
+      },
+      {
+        "Question ID": 22,
+        "User Questions": [
+          "What events are hosted at Sahyadri?",
+          "Do you have cultural events?",
+          "Are there college fests?",
+          "Tell me about the annual college events?",
+          "What kind of events are held on campus?"
+        ],
+        "Bot Response": "Sahyadri hosts numerous events including cultural fests, technical expos, hackathons, and guest lectures. Events like Kalotsav and Techvision are highlights.",
+        "Category": "Student Life"
+      },
+      {
+        "Question ID": 23,
+        "User Questions": [
+          "Do you have sports facilities?",
+          "What sports can I play?",
+          "Sports opportunities at the college?",
+          "Are there tournaments organized?",
+          "Sports options at Sahyadri?"
+        ],
+        "Bot Response": "Our campus features facilities for cricket, football, basketball, badminton, and more. Annual sports meets and inter-college tournaments are also organized.",
+        "Category": "Facilities"
+      },
+      {
+        "Question ID": 24,
+        "User Questions": [
+          "What is the alumni network like?",
+          "Can alumni help with career guidance?",
+          "Alumni support system?",
+          "Networking with past students?",
+          "Does the college have an alumni association?"
+        ],
+        "Bot Response": "Our strong alumni network actively supports current students with mentoring, job referrals, and career guidance. Join the alumni portal to stay connected.",
+        "Category": "Alumni Relations"
+      },
+      {
+        "Question ID": 25,
+        "User Questions": [
+          "How does the mentorship program work?",
+          "Can I get a mentor?",
+          "Mentorship opportunities at Sahyadri?",
+          "Who can guide me in academics?",
+          "Details on the mentoring system?"
+        ],
+        "Bot Response": "Each student is assigned a faculty mentor to guide them in academics and career planning. Regular meetings ensure personalized support.",
+        "Category": "Student Services"
+      },
+      {
+        "Question ID": 26,
+        "User Questions": [
+          "Is there a dress code for students?",
+          "What is the college dress policy?",
+          "Do I need to wear uniforms?",
+          "Dress regulations at Sahyadri?",
+          "Clothing guidelines for students?"
+        ],
+        "Bot Response": "While there is no strict dress code, students are encouraged to wear formal attire during academic hours. For labs and workshops, specific dress codes apply.",
+        "Category": "General Information"
+      },
+      {
+        "Question ID": 27,
+        "User Questions": [
+          "What is the research culture like?",
+          "Do you support student research?",
+          "Research opportunities at the college?",
+          "Can I work on research projects?",
+          "How to get involved in research at Sahyadri?"
+        ],
+        "Bot Response": "Sahyadri College encourages research through dedicated labs, funding for projects, and collaborations with industry and academia. Students can join ongoing projects or propose new ideas.",
+        "Category": "Academic Opportunities"
+      },
+      {
+        "Question ID": 28,
+        "User Questions": [
+          "Do you have cafeteria facilities?",
+          "What food options are available on campus?",
+          "Is there a canteen?",
+          "Where can I eat on campus?",
+          "Food services at Sahyadri?"
+        ],
+        "Bot Response": "Our campus has multiple cafeterias serving a variety of hygienic and affordable meals, snacks, and beverages catering to diverse tastes.",
+        "Category": "Facilities"
+      },
+      {
+        "Question ID": 29,
+        "User Questions": [
+          "What is the grievance redressal system?",
+          "How do I report an issue?",
+          "Where can I lodge complaints?",
+          "Complaint process at Sahyadri?",
+          "How to address concerns formally?"
+        ],
+        "Bot Response": "The college has a structured grievance redressal mechanism. Submit your concerns through the online portal or approach the committee for assistance.",
+        "Category": "General Information"
+         },
+    
+      {
+        "Question ID": 30,
+        "User Questions": [
+          "What transport facilities are available?",
+          "Do you have buses for students?",
+          "How can I travel to the campus?",
+          "Transportation options at Sahyadri?",
+          "Does the college provide transport services?"
+        ],
+        "Bot Response": "Yes, Sahyadri College provides transport services with a fleet of buses covering major areas of the city and neighboring regions. Contact the transport office for routes and schedules.",
+        "Category": "Transport Services"
+      },
+      {
+        "Question ID": 31,
+        "User Questions": [
+          "What is the attendance policy?",
+          "How many classes can I miss?",
+          "What is the minimum attendance required?",
+          "Attendance rules for students?",
+          "What happens if I don't meet attendance criteria?"
+        ],
+        "Bot Response": "Sahyadri College requires a minimum of 75% attendance in each subject for eligibility in exams. Exceptions may be granted for valid reasons with prior approval.",
+        "Category": "Attendance Policy"
+      },
+      {
+        "Question ID": 32,
+        "User Questions": [
+          "What is the college ranking?",
+          "Where does Sahyadri stand among colleges?",
+          "Rank of Sahyadri in India?",
+          "How is the college ranked nationally?",
+          "College rankings and recognition?"
+        ],
+        "Bot Response": "Sahyadri College is consistently ranked among the top engineering institutions in the state and has received accolades for innovation and industry collaboration. Visit our website for detailed rankings.",
+        "Category": "General Information"
+      },
+      {
+        "Question ID": 33,
+        "User Questions": [
+          "Do you have evening classes?",
+          "Can I attend classes after work?",
+          "Evening class availability?",
+          "Do you offer night courses?",
+          "Are evening sessions conducted?"
+        ],
+        "Bot Response": "Yes, evening classes are available for certain programs to accommodate working professionals and part-time students. Contact the admissions office for a list of available programs.",
+        "Category": "Enrollment Options"
+      },
+      {
+        "Question ID": 34,
+        "User Questions": [
+          "What safety measures are in place on campus?",
+          "Is the campus safe for students?",
+          "Security arrangements at Sahyadri?",
+          "How do you ensure student safety?",
+          "Are there CCTV cameras on campus?"
+        ],
+        "Bot Response": "Sahyadri College has 24/7 security with trained personnel, CCTV surveillance, and strict access controls to ensure student safety.",
+        "Category": "Safety"
+      },
+      {
+        "Question ID": 35,
+        "User Questions": [
+          "What support is available for international students?",
+          "Do you help international students with visas?",
+          "Services for foreign students?",
+          "Can I study at Sahyadri as an international student?",
+          "Are there special facilities for international students?"
+        ],
+        "Bot Response": "We provide dedicated support for international students, including assistance with visas, orientation programs, and cultural integration. Contact our international office for more details.",
+        "Category": "Global Opportunities"
+      },
+      {
+        "Question ID": 36,
+        "User Questions": [
+          "What sustainability initiatives are in place?",
+          "Does the college focus on green practices?",
+          "Environment-friendly activities at Sahyadri?",
+          "Sustainability programs on campus?",
+          "Is Sahyadri eco-friendly?"
+        ],
+        "Bot Response": "Sahyadri College promotes sustainability through initiatives like rainwater harvesting, solar energy, waste management, and green campus drives.",
+        "Category": "Sustainability"
+      },
+      {
+        "Question ID": 37,
+        "User Questions": [
+          "How are projects funded at the college?",
+          "Can I get funding for my project?",
+          "Are student projects supported financially?",
+          "Funding options for research projects?",
+          "Does Sahyadri offer grants for projects?"
+        ],
+        "Bot Response": "Students can apply for funding through our research and innovation cell. External grants and industry collaborations are also available for eligible projects.",
+        "Category": "Academic Opportunities"
+      },
+      {
+        "Question ID": 38,
+        "User Questions": [
+          "What is the student-faculty ratio?",
+          "How many students are there per faculty?",
+          "Ratio of faculty to students?",
+          "Do professors have time for students?",
+          "How accessible are the faculty members?"
+        ],
+        "Bot Response": "The student-faculty ratio at Sahyadri is approximately 15:1, ensuring personalized attention and effective learning.",
+        "Category": "Academic Information"
+      },
+      {
+        "Question ID": 39,
+        "User Questions": [
+          "Are there any language courses available?",
+          "Can I learn a new language at Sahyadri?",
+          "Language learning options?",
+          "Do you offer foreign language classes?",
+          "What languages can I study?"
+        ],
+        "Bot Response": "Sahyadri offers language courses such as Japanese, German, and French through dedicated clubs and external partnerships. Check the language club schedule for details.",
+        "Category": "Academic Opportunities"
+      },
+      {
+        "Question ID": 40,
+        "User Questions": [
+          "What is the refund policy?",
+          "Can I get a refund if I withdraw?",
+          "Fee refund process?",
+          "Refund criteria for cancellations?",
+          "Is the fee refundable?"
+        ],
+        "Bot Response": "Refunds are processed as per the college's policy, which adheres to UGC guidelines. Contact the admissions office for the detailed refund process.",
+        "Category": "General Information"
+      },
+      {
+        "Question ID": 41,
+        "User Questions": [
+          "Can I bring my own vehicle to campus?",
+          "Is parking available for students?",
+          "Student parking facilities?",
+          "Can I park my bike on campus?",
+          "Does Sahyadri have parking space?"
+        ],
+        "Bot Response": "Yes, parking facilities are available for students. Separate zones are designated for two-wheelers and four-wheelers.",
+        "Category": "Facilities"
+      },
+      {
+        "Question ID": 42,
+        "User Questions": [
+          "Do you offer any preparatory courses?",
+          "Can I take bridge courses before starting?",
+          "Are there remedial classes for weak students?",
+          "What kind of prep courses do you have?",
+          "Do you help students who need extra support?"
+        ],
+        "Bot Response": "Preparatory and remedial courses are offered to bridge knowledge gaps and ensure students are well-prepared for their studies. Contact the academic coordinator for details.",
+        "Category": "Academic Opportunities"
+      },
+      {
+        "Question ID": 43,
+        "User Questions": [
+          "What are the dining hall timings?",
+          "When does the mess open?",
+          "Mess timings for students?",
+          "Are meals available on weekends?",
+          "Dining facility schedule?"
+        ],
+        "Bot Response": "The dining hall operates from 7:00 AM to 9:00 PM daily, offering breakfast, lunch, dinner, and snacks. Weekend meals are also provided.",
+        "Category": "Facilities"
+      },
+      {
+        "Question ID": 44,
+        "User Questions": [
+          "What is the process for late admissions?",
+          "Can I join after the deadline?",
+          "How does late admission work?",
+          "Late application options?",
+          "Is late admission possible?"
+        ],
+        "Bot Response": "Late admissions may be considered on a case-by-case basis, subject to availability and approval by the admissions committee. Contact the admissions office for assistance.",
+        "Category": "Application Process"
+      },
+      {
+        "Question ID": 45,
+        "User Questions": [
+          "Are there guest lectures?",
+          "Do industry professionals visit Sahyadri?",
+          "What kind of guest speakers are invited?",
+          "Guest lecture frequency?",
+          "Can I attend industry talks?"
+        ],
+        "Bot Response": "Yes, the college regularly hosts guest lectures by industry leaders, academicians, and entrepreneurs to provide insights and enhance learning.",
+        "Category": "Academic Opportunities"
+      },
+      {
+        "Question ID": 46,
+        "User Questions": [
+          "Do you offer executive education?",
+          "Can working professionals enroll?",
+          "Executive program options?",
+          "Are there courses for executives?",
+          "Is there an executive MBA program?"
+        ],
+        "Bot Response": "Yes, Sahyadri offers executive education programs designed for working professionals. Contact the admissions office for details on eligibility and scheduling.",
+        "Category": "Enrollment Options"
+      },
+      {
+        "Question ID": 47,
+        "User Questions": [
+          "What digital learning resources are available?",
+          "Do you have an online library?",
+          "E-learning tools at Sahyadri?",
+          "Can I access digital study materials?",
+          "What is the scope of online resources?"
+        ],
+        "Bot Response": "Sahyadri provides access to a vast range of e-books, journals, and online study materials through our digital library and learning management system.",
+        "Category": "Facilities"
+      },
+      {
+        "Question ID": 48,
+        "User Questions": [
+          "Can I work part-time while studying?",
+          "Does Sahyadri allow part-time work?",
+          "Work-study options?",
+          "Can students take up part-time jobs?",
+          "Rules for working while studying?"
+        ],
+        "Bot Response": "Students are encouraged to focus on academics, but part-time opportunities within the campus and flexible external work arrangements are supported. Check with the placement office for options.",
+        "Category": "Student Life"
+      },
+     {
+        "Question ID": 49,
+        "User Questions": [
+          "Hello!",
+          "Hi there!",
+          "Hey, how are you?",
+          "Good morning!",
+          "Hello, chatbot!",
+          "Hey"
+        ],
+        "Bot Response": "Hello! How can I assist you today?",
+        "Category": "Greetings"
+      },
+      {
+        "Question ID": 50,
+        "User Questions": [
+          "Bye!",
+          "Goodbye!",
+          "See you later!",
+          "Take care!",
+          "See you soon!"
+        ],
+        "Bot Response": "Goodbye! Feel free to reach out if you have more questions.",
+        "Category": "Farewells"
+      },
+      {
+        "Question ID": 51,
+        "User Questions": [
+          "That wasn't the proper response.",
+          "Give me a better answer.",
+          "What is this?",
+          "I don't understand.",
+          "Explain better."
+        ],
+        "Bot Response": "I apologize for the confusion. I hope to provide you with more accurate information next time. Could you please clarify your question? How else may I assist you?",
+        "Category": "Fallback"
+      },
+      {
+        "Question ID": 52,
+        "User Questions": [
+          "Where is the college located?",
+          "What is the college address?",
+          "How can I reach the college?"
+        ],
+        "Bot Response": "Sahyadri College is located at Adyar, Mangaluru, Karnataka 575007. You can find the location on Google Maps!",
+        "Category": "location"
+      },
+      {
+        "Question ID": 53,
+        "User Questions": [
+          "thankyou !","bye","ok","okay"
+        ],
+        "Bot Response": "Come back if you have any further doubts! I will always be here to assist you!",
+        "Category": "bye"
+      }
+    ]
+  }
+    
+  
+  
