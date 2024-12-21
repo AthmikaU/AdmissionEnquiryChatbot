@@ -10,7 +10,7 @@ CORS(app, resources={r"/api/chat": {"origins": "*"}})
 
 # Load chatbot
 chatbot = CollegeAdmissionChatbot(
-    model_path='models/nlp/intent_model.pkl',
+    model_path='models/nlp/model_svm_fw.pkl',
     dataset_path='data/training_data/college_admissions.json',
     log_path='logs/chatbot_logs.jsonl'
 )

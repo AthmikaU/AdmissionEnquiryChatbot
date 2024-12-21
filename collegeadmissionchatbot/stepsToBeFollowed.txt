@@ -9,7 +9,9 @@
         // "Set-ExecutionPolicy RemoteSigned -Scope CurrentUser" ) 
         // (now, try again activating venv in terminal)
 
-    4. "pip install flask flask-cors scikit-learn joblib"
+    4. "pip install flask flask-cors scikit-learn joblib spacy transformers keybert tf-keras" 
+        "python -m spacy download en_core_web_sm"
+
 
     5. "python scripts/train_nlp.py" : (To train model after changing dataset)
 

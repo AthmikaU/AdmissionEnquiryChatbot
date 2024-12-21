@@ -68,12 +68,10 @@ def train_intent_model(dataset_path, model_output_path):
     """
     questions, intents = preprocess_dataset(dataset_path)
     
-    # Ensuring that the test_size is valid and that all classes are represented
-    # Increase the test_size to 0.3 (30%) or reduce the number of categories/classes
-    X_train, X_val, y_train, y_val = train_test_split(
-        questions, intents, test_size=0.3, random_state=42, stratify=intents)
+    # Split data into training and validation sets
+    X_train, X_val, y_train, y_val = train_test_split(questions, intents, test_size=0.2, random_state=42, stratify=intents)
     
-    model = Pipeline([ 
+    model = Pipeline([
         ('vectorizer', TfidfVectorizer(ngram_range=(1, 2), stop_words='english')),  # TF-IDF with bigrams
         ('classifier', SVC(kernel='linear'))  # SVM classifier
     ])
@@ -90,7 +88,6 @@ def train_intent_model(dataset_path, model_output_path):
     os.makedirs(os.path.dirname(model_output_path), exist_ok=True)
     joblib.dump(model, model_output_path)
     print(f"Model saved at {model_output_path}")
-
 
 def predict_intent(query, model, categories):
     """
@@ -118,33 +115,25 @@ def get_fallback_response(query, categories):
 
 if __name__ == "__main__":
     dataset_path = 'data/training_data/college_admissions.json'
-    model_output_path = 'models/nlp/model_svm_fw.pkl'
+    model_output_path = 'models/nlp/intent_model_svm_fw.pkl'
     
     # Updated categories from your list
     categories = [
-        "Timings", "Safety", "Undergraduate Courses", "Associate Dean of Academics", "Placement Training",
-        "Seminar Hall", "Industry Collaborations", "Overview", "Farewell", "Services", "Scholarship Application Process",
-        "Greetings", "bye", "Useful Links", "Fee Structure of Hostel", "College Reputation", "Dean of Placements", 
-        "Admission Process", "Research Opportunities", "Library Contact", "MBA Admission", "Placement", "Internship", 
-        "Internet Details", "Accommodation", "History", "Recommended Resource Links", "Courses", "SOSC Club", 
-        "Engineering Fee Structure", "Program Outcomes", "Contact Information", "Bot Information", 
-        "Associate Dean of Research and Development", "MBA Entrance Exam", "Student Strength", "College Location", 
-        "Director of Research", "Mission", "MBA Application Deadline", "MBA Duration", "Staff Members", "Casual Interaction", 
-        "Application Process", "Sahyadri Nihongo Club", "Alumni Association", "Associate Dean of Student Welfare", 
-        "Food Court / Canteen", "Principal", "Vision", "Wi-Fi Facilities", "Engineering Programs", 
-        "Fees Structure - Management quota", "College Affiliation", "Placement Facilities", "Digital Library", 
-        "Dean of Strategic Planning", "Confusion", "Student-Centric Initiatives", "Program Educational Objectives", 
-        "Attendance Policy", "Gym", "Engineering Admission Process", "Eligibility Criteria", "Required Documents", 
-        "Student Startups", "MBA Part-time", "Director", "Achievements", "Medical Facilities", "Placement Vision and Mission", 
-        "Contact Placement Department", "Bot Developer Info", "Campus", "MBA Entrance Syllabus", "MBA Fee Structure", 
-        "Bus Service Changes", "VTU Syllabus", "Journals", "Statistics", "VTU Question Paper", "Rules & Regulations", 
-        "Vision and Mission", "Sports Facilities", "Student Clubs", "Auditorium", "College Ranking", "Bus Service Refund", 
-        "Vice Principal", "NRI Fees Structure", "CEO", "CET Admission", "Mech-Tech Garage", "Infrastructure", 
-        "Mentor / Guide / Student Services", "Lateral Entry Admission", "Skill-Focused Learning", "Hostel Timings", 
-        "B.E. Syllabus", "Academic Opportunities", "Bus Service Rules", "Bot Capabilities", 
-        "HOD of Computer Science and Engineering Department", "Faculty Information", "Comed-K Admission", "Research", 
-        "Extracurricular Activities", "Scholarships", "Placements", "MBA Admission Process", "Dean of Career Guidance, Training & Placement", 
-        "MBA Placements", "Hostel", "Bus Service", "Innovation and Incubation"
+        "B.E. Syllabus", "College History", "Engineering Entrance Exam", "Hostel Fees", "Campus Environment",
+        "Farewell", "Hostel Application", "Scholarship Application Process", "College Affiliation",
+        "Principal Information", "MBA Specializations", "Sports Facilities", "Student Startups", 
+        "Career Opportunities", "Engineering Admission Process", "Engineering Intake Capacity", 
+        "Student Exchange Programs", "Campus Cafeteria", "MBA Application Deadline", "Cultural Fest", 
+        "Campus Infrastructure", "College Leadership", "Computer Science Engineering", "Hostel Facilities", 
+        "College Reputation", "College Vision", "College Location", "MBA Part-time", "Bot Developer Info", 
+        "Greetings", "Student Development", "Casual Interaction", "College Ranking", "Application Process", 
+        "Faculty Information", "MBA Entrance Exam", "Extracurricular Activities", "MBA Entrance Syllabus", 
+        "Engineering Programs", "Bot Information", "Internships", "Lateral Entry Admission", "Placement Cell", 
+        "Library Contact", "Placements", "Student Clubs", "MBA Duration", "Canteen / Cafeteria / Food", 
+        "Fee Structure", "Engineering Fee Structure", "Alumni Association", "CET Score Requirement", 
+        "MBA Admission", "Contact Information", "Language Courses", "Campus Facilities", "International Programs", 
+        "MBA Fee Structure", "Admission Process", "MBA Placements", "Research Opportunities", 
+        "College Vision and Mission", "Bot Capabilities", "Scholarships", "Medical Facilities", "MBA Admission Process"
     ]
     
     train_intent_model(dataset_path, model_output_path)
