@@ -173,7 +173,8 @@ body {
 }
 
 
-/* ACCREDATION STYLES */
+
+/* Accredation styles */
 .accreditations-container {
     position: absolute; /* Fixes the position relative to the nearest positioned parent */
     top: 100%; /* Moves it below the carousel */
@@ -290,27 +291,325 @@ section.container {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better design */
 }
 
-/* chatbot button */
+
+/* EXPLORE COURSES BUTTON  */
+.class-white {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Container inside the class-white section */
+.class-white .container {
+    margin-top: 1rem; /* Ensures proper spacing from the previous section */
+    padding: 2rem; /* Adjust padding to make the container content more compact */
+    margin-bottom: 1rem;
+    
+}
+
+/* Flex Layout for the class-white section */
+.class-white .flex {
+    display: flex;
+}
+
+.class-white .flex-col {
+    flex-direction: column;
+}
+
+.class-white .lg\:flex-row {
+    flex-direction: row;
+}
+
+.class-white .justify-between {
+    justify-content: space-between;
+}
+
+.class-white .items-center {
+    align-items: center;
+}
+
+.class-white .text-center {
+    text-align: center;
+}
+
+/* Heading Styles for the class-white section */
+.class-white h3 {
+    color: #021655; /* Web Blue */
+    font-weight: 60px;
+    letter-spacing: 0.025em;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.class-white .lg\:text-2xl {
+    font-size: 1.5rem;
+}
+
+/* Button Styling for the class-white section */
+.class-white .explore-btn {
+    font-size: 1.275rem;
+    font-weight: 600;
+    background-color: #13294B; /* Web Green */
+    color: white;
+    border-radius: 9999px; /* Fully rounded */
+    padding: 0.75rem 2rem;
+    transition: all 0.3s ease;
+    border: none; /* Removes the border */
+}
+
+
+/* NEWS AND EVENTS SECTION  */
+/* General Styles for Campus Buzz Section */
+.campus-buzz-section {
+    background-color: rgba(112, 134, 175, 0.11);
+    padding: 2rem 1rem;
+  }
+  
+  .campus-buzz-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (min-width: 1024px) {
+    .campus-buzz-container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+  
+  .campus-buzz-left-column {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .campus-buzz-section-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #0e034d;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    padding: 50px;
+  }
+  
+  .campus-buzz-main-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    margin-top: 0.5rem;
+  }
+  
+  .campus-buzz-description-xl {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    color: #021655;
+    font-weight: 300;
+    margin-top: 1rem;
+    max-width: 600px;
+    margin: 1rem auto;
+     text-align: justify;
+  }
+  
+  .campus-buzz-description-xs {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #021655;
+    font-weight: 300;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .campus-buzz-view-more-btn, .campus-buzz-view-more-btn-mobile {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    border: 2px solid #000;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: none;
+  }
+  
+  .campus-buzz-view-more-btn:hover, .campus-buzz-view-more-btn-mobile:hover {
+    opacity: 0.75;
+  }
+  
+  @media (min-width: 1024px) {
+    .campus-buzz-view-more-btn {
+      display: inline-flex;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .campus-buzz-view-more-btn-mobile {
+      display: inline-flex;
+      margin-top: 1rem;
+    }
+  }
+  
+  /* Right Column Styles */
+  .campus-buzz-right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .campus-buzz-event-card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .campus-buzz-event-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .campus-buzz-event-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #091e61;
+  }
+  
+  .campus-buzz-event-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #021655;
+    font-weight: 300;
+    margin-top: 1rem;
+  }
+  
+  .campus-buzz-view-more-link {
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .campus-buzz-event-date {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.2);
+    font-weight: 300;
+    text-align: right;
+    margin-top: 1rem;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (min-width: 1024px) {
+    .campus-buzz-left-column {
+      text-align: left;
+    }
+  
+    .campus-buzz-description-xl {
+      display: block;
+    }
+  
+    .campus-buzz-description-xs {
+      display: none;
+    }
+  }
+  
+
+  /* Footer  */
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px;
+    background-color: #07153a;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-column h3 {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: gray;
+    text-decoration: none;
+    font-size: 12px;
+
+}
+
+.footer-column ul li a:hover {
+    text-decoration: none;
+}
+
+.footer .contact-info {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.footer .contact-info span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer .logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer .logo span {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+/* CHATBOT BUTTON  */
 .chatbot-btn {
     position: fixed;
     bottom: 25px;
     right: 25px;
-    width: 95px;
-    height: 65px;
-    background-color: #130360;
-    border-radius: 50%;
-    border: 1px solid white;
-    font-size: 20px;
-    text-align: center;
+    width: 80px;
+    height: 80px;
     cursor: pointer;
     z-index: 15;
-    box-shadow: 0 0 10px rgb(158, 195, 237),
-                0 0 15px rgba(253, 253, 255, 0.8),
-                0 0 10px rgba(80, 111, 204, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
 }
-.chatbot-btn a{
-    color: #ffffff;
-    text-decoration: none;
+
+.chatbot-btn a {
     z-index: 15;
-    font-size: 30px;
+}
+
+.chatbot-btn .chatbot-img {
+    width: 90%; /* Adjust the image size */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 15;
+
 }
